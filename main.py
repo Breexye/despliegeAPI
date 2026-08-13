@@ -9,6 +9,7 @@ from supabase import create_client, Client
 
 load_dotenv()
 
+
 app = FastAPI(
     title="API de Currículum Profesional",
     description="API RESTful conectada a Supabase con Frontend integrado.",

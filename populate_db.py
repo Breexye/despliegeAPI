@@ -77,6 +77,7 @@ cv_data = {
     ]
 }
 
+
 try:
     print("Intentando insertar datos iniciales en Supabase...")
     # Verificar si existe o insertar
