@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Brenda</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="glass-panel">
+            <h1 id="name">Cargando...</h1>
+            <h2 id="profession"></h2>
+            <p id="about"></p>
+            <div class="contact-info">
+                <span id="email"></span> | <span id="phone"></span> | <a href="#" id="github" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="glass-panel">
+                <h3>Educación</h3>
+                <ul id="education-list" class="list"></ul>
+            </section>
+
+            <section class="glass-panel">
+                <h3>Habilidades</h3>
+                <div id="skills-list" class="tags"></div>
+            </section>
+
+            <section class="glass-panel">
+                <h3>Proyectos</h3>
+                <div id="projects-list" class="grid-cards"></div>
+            </section>
+            
+            <section class="admin-panel glass-panel">
+                <h3>Panel de Administración (Pruebas API)</h3>
+                
+                <div class="admin-section">
+                    <h4>Agregar Proyecto (POST)</h4>
+                    <form id="add-project-form">
+                        <input type="text" id="proj-name" placeholder="Nombre del proyecto" required>
+                        <input type="text" id="proj-period" placeholder="Periodo (Ej. 2026)" required>
+                        <input type="text" id="proj-details" placeholder="Detalle (separado por coma)" required>
+                        <button type="submit" class="btn-primary">Añadir Proyecto</button>
+                    </form>
+                </div>
+                
+                <div class="admin-section">
+                    <h4>Eliminar Proyecto (DELETE)</h4>
+                    <form id="del-project-form">
+                        <input type="text" id="del-proj-name" placeholder="Nombre exacto del proyecto" required>
+                        <button type="submit" class="btn-danger">Eliminar Proyecto</button>
+                    </form>
+                </div>
+
+                <div class="admin-section">
+                    <h4>Actualizar Perfil (PUT)</h4>
+                    <form id="update-profile-form">
+                        <input type="text" id="update-name" placeholder="Nuevo Nombre" required>
+                        <button type="submit" class="btn-warning">Actualizar Nombre</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
